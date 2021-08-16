@@ -151,7 +151,8 @@ public class JPanelReto5 extends javax.swing.JPanel {
 
     private void btnLiderporsalarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLiderporsalarioActionPerformed
 
-        VistaRequerimientosReto4.requerimiento1();
+        String text = VistaRequerimientosReto4.requerimiento1();
+        txtConsulta.append(text);
     }//GEN-LAST:event_btnLiderporsalarioActionPerformed
 
 

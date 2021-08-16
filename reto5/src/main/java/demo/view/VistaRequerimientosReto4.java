@@ -9,29 +9,29 @@ public class VistaRequerimientosReto4 {
     
     public static final Controlador control = new Controlador();
 
-    public static void requerimiento1() {
+    public static String requerimiento1() {
         System.out.println("*** Lideres por salario ***");
 
         try {
-            ArrayList<Liderporsalario> lista = control.requerimiento_1();
-            String texto = new String();
-            texto = "Nombre y Apellido\t ID_lider\t Salario\n";   
-            for (Liderporsalario lider : lista) {
+            //ArrayList<Liderporsalario> lista = control.requerimiento_1();
+            String texto = new String("");
+            texto = "Nombre y Apellido\t ID_lider\t Salario\n";
+            /*for (Liderporsalario lider : lista) {
                 
-                System.out.printf("Nombre El lider %s %s con Id %d Tiene un salario de %d %n", 
+                System.out.printf(texto + "Nombre El lider %s %s con Id %d Tiene un salario de %d %n", 
                 lider.getNombre(),
                 lider.getPrimerApellido(),
                 lider.getId_lider(),
                 lider.getSalario()
                 );
-            }
+            }*/
+            return texto;
             
         } catch (Exception e) {
 
             System.err.println("Se produjo el siguiente error: "+ e.getMessage());
+            return e.getMessage();
         }
-
-
     }
 
     public static void requerimiento2() {

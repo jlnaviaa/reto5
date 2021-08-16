@@ -18,7 +18,8 @@ public class App
 
         System.out.println("---Felicitaciones lo ha logrado---");
 */
-        JPanelReto5 panel = new JPanelReto5();
+        JFrameReto5.main(args);
+ 
 
 
     }
