@@ -1,25 +1,27 @@
 package demo;
 
 import demo.view.*;
+import java.awt.EventQueue;
 
 public class App 
 {
-    public static void main( String[] args )
-    {
-        /*VistaRequerimientosReto4.requerimiento1();
-
-        System.out.println("-----------");
-
-        VistaRequerimientosReto4.requerimiento2();
-
-        System.out.println("-----------");
-
-        VistaRequerimientosReto4.requerimiento3();
-
-        System.out.println("---Felicitaciones lo ha logrado---");
-*/
-        JFrameReto5.main(args);
- 
+    public static void main( String[] args ){
+        
+        EventQueue.invokeLater(new Runnable(){
+            
+            @Override
+            public void run(){
+                
+                try {
+                    VistaRequerimientosReto4 frame = new VistaRequerimientosReto4();
+                    frame.setVisible(true);
+                    
+                }catch (Exception e){
+                                    
+                }
+            }
+        });
+        
 
 
     }
