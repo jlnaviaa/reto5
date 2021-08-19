@@ -5,18 +5,12 @@ import java.util.ArrayList;
 import demo.controller.*;
 import demo.model.vo.*;
 
-import javax.swing.*;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-
-public class VistaRequerimientosReto4 extends javax.swing.JFrame {
+public class VistaRequerimientosReto5 extends javax.swing.JFrame {
     
     
     // Declariacion de variables
     public static final Controlador control = new Controlador();                    
-    private JPanel contentPane;
     private static javax.swing.JTextArea jTextArea1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -28,8 +22,8 @@ public class VistaRequerimientosReto4 extends javax.swing.JFrame {
     //private javax.swing.JTextArea jTextArea1;
     
     
-    // Constructor del objeto VistaRequerimientosReto4
-    public VistaRequerimientosReto4 () {
+    // Constructor del objeto VistaRequerimientosReto5
+    public VistaRequerimientosReto5 () {
         initComponents();
     }
     private void initComponents() {
@@ -131,22 +125,18 @@ public class VistaRequerimientosReto4 extends javax.swing.JFrame {
     }
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
         requerimiento1();
     }                                        
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
         requerimiento2();
     }                                        
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
         requerimiento3();
     }                                        
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
         jTextArea1.setText("");
     }           
 
